@@ -9,13 +9,15 @@ nav {
 .navbar {
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .logo {
+
+    display: flex;
+    align-items: center;
 
     img {
         height: 25px;
