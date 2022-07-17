@@ -1,0 +1,90 @@
+.section {
+    &__stats{
+        .stats{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+            @media (max-width: $breakpoint768) {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+            @media (max-width: $breakpoint375) {
+                padding: 35px 0;
+            }
+        }
+
+        .stats__item {
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 315px;
+            text-align: center;
+            gap: 30px;
+
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+                gap: 10px;
+            }
+            &:nth-child(2){
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 15px;
+                    bottom: 15px;
+                    width: 2px;
+                    height: 50px;
+                    background: $primary;
+                    @media (max-width: $breakpoint768) {
+                        display: none;
+                    }
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    top: 15px;
+                    bottom: 15px;
+                    width: 2px;
+                    height: 50px;
+                    background: $primary;
+                    @media (max-width: $breakpoint768) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        .stats__title{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+                text-transform: capitalize;
+                color: $primary;
+                @media (max-width: $breakpoint1450) {
+                    font-size: 32px;
+                    line-height: 1;
+                }
+                @media (max-width: $breakpoint768) {
+                    font-size: 28px;
+                }
+        }
+
+        .stats__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $primary;
+            @media (max-width: $breakpoint1450) {
+                font-size: 20px;
+            }
+            @media (max-width: $breakpoint768) {
+                font-size: 18px;
+            }
+        }
+    }
+}
