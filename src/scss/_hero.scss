@@ -29,7 +29,7 @@
 
 .section {
     &__hero {
-        // position: relative;
+        
     }
 }
 
@@ -80,6 +80,7 @@
             line-height: 130%;
             color: $primary;
             margin-bottom: 25px;
+            letter-spacing: -1.5px;
             @media (max-width: $breakpoint1450) {
                 font-size: 42px;
             }

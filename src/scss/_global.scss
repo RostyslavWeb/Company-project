@@ -77,3 +77,56 @@ body {
 
     }
 }
+
+.section{
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        text-transform: capitalize;
+        color: $primary;
+        margin-bottom: 15px;
+        
+        @media (max-width: $breakpoint1450) {
+            font-size: 42px;
+        }
+        @media (max-width: $breakpoint992) {
+            font-size: 34px;
+        }
+        @media (max-width: $breakpoint768) {
+            font-size: 28px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        &.title__center{
+            text-align: center;
+        }
+
+        &.title__white{
+            color: $white;
+        }
+    }
+
+    &__subtitle{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        color: $black;
+        margin-bottom: 80px;
+
+        &.subtitle__center{
+            text-align: center;
+        }
+
+        &.subtitle__white{
+            color: $white;
+        }
+    }
+
+}
