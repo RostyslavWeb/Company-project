@@ -1,0 +1,14 @@
+.section {
+    &__vision{
+        background: $primary;
+        padding: 80px 0;
+        margin-top: 80px;
+        @media (max-width: $breakpoint768) {
+            padding: 50px 0;
+        }
+
+        .vision__subtitle{
+            margin-bottom: 0;
+        }
+    }
+}

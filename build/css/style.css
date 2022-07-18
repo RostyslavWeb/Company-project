@@ -574,6 +574,16 @@ body.locked {
   color: #000;
 }
 
+.section__vision {
+  background: #03283C;
+  padding: 80px 0;
+  margin-top: 80px;
+}
+
+.section__vision .vision__subtitle {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -923,6 +933,10 @@ body.locked {
 
   .section__offers .offers__item:nth-child(even) {
     justify-self: center;
+  }
+
+  .section__vision {
+    padding: 50px 0;
   }
 }
 
