@@ -74,7 +74,11 @@ body {
         }
     }
     &__secondary{
-
+        color: $white;
+        background: $secondary;
+        &:hover {
+            background-color:#cc4e00;
+        }
     }
 }
 

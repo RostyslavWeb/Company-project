@@ -139,6 +139,15 @@ body.locked {
   background-color: #010D14;
 }
 
+.btn__secondary {
+  color: #fff;
+  background: #FF6200;
+}
+
+.btn__secondary:hover {
+  background-color: #cc4e00;
+}
+
 .section__title {
   font-style: normal;
   font-weight: 700;
@@ -653,6 +662,43 @@ body.locked {
   color: #000;
 }
 
+.section__why {
+  position: relative;
+  padding: 190px 0 220px 0;
+}
+
+.section__why .why__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.why__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  max-width: 600px;
+}
+
+.why__item .why__subtitle {
+  margin-bottom: 15px;
+}
+
+.why__item .why__btn {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 15px 30px;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -729,6 +775,10 @@ body.locked {
 
   .who__item {
     padding: 100px 0;
+  }
+
+  .section__why .why__img {
+    max-width: 500px;
   }
 }
 
@@ -1050,6 +1100,22 @@ body.locked {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+
+  .section__why {
+    padding: 90px 0 110px 0;
+  }
+
+  .section__why .why__img {
+    max-width: 300px;
+    opacity: 0.4;
+  }
+
+  .why__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    padding: 0;
+  }
 }
 
 @media (max-width: 578px) {
@@ -1058,6 +1124,16 @@ body.locked {
   }
 
   .who__item {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+
+  .why__item .subtitle__why {
+    max-width: 250px;
+  }
+
+  .why__item {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
@@ -1114,10 +1190,18 @@ body.locked {
   .section__who .who__img {
     max-width: 250px;
   }
+
+  .section__why .why__img {
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 450px) {
   .section__who .who__img {
+    opacity: 0.4;
+  }
+
+  .section__why .why__img {
     opacity: 0.4;
   }
 }
