@@ -17,6 +17,7 @@
             right: 0;
             top: 0;
             bottom: 0;
+            z-index: -1;
             @media (max-width: $breakpoint1450) {
                 max-width: 500px;
             }
@@ -28,7 +29,6 @@
             }
             @media (max-width: 450px) {
                 opacity: .4;
-                z-index: -1;
             }
         }
     }
