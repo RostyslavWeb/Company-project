@@ -1,0 +1,68 @@
+.section {
+    &__benefits {
+        background: $primary;
+        padding: 80px 0 80px 0;
+        @media (max-width: $breakpoint768) {
+            padding: 50px 0;
+        }
+
+        .benefits__subtitle{
+            max-width: 620px;
+        }
+    }
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: space-between;
+    gap: 35px;
+
+    @media (max-width: $breakpoint1450) {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    @media (max-width: $breakpoint992) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    @media (max-width: $breakpoint768) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+        background: $white;
+        border-top: 6px solid $secondary;
+        padding: 40px 30px 20px 30px;
+
+        .benefits__icon {
+            margin-bottom: 35px;
+        }
+
+        .benefits__title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $primary;
+            margin-bottom: 8px;
+        }
+
+        .benefits__text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.3px;
+            color: $black;
+        }
+        
+    }
+    &__item:last-child {
+        @media (max-width: $breakpoint1450) {
+            grid-column: 2/3;
+        }
+        @media (max-width: $breakpoint992) {
+            grid-column: auto;
+        }
+    }
+}
