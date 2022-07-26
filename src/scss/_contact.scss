@@ -1,0 +1,94 @@
+.section {
+    &__contact {
+        padding: 204px 0;
+        background: url(../img/contact__bg.jpg) center / cover no-repeat;
+        @media (max-width: $breakpoint1450) {
+            padding: 125px 0;
+        }
+        @media (max-width: $breakpoint768) {
+            padding: 50px 0;
+        }
+        
+    }
+}
+
+.contact {
+
+    margin: 0 auto;
+    max-width: 650px;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $white;
+        @media (max-width: $breakpoint768) {
+            line-height: 1.2;
+            font-size: 24px;
+        }
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: $white;
+        margin-bottom: 30px;
+        @media (max-width: $breakpoint768) {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $white;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .form {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        margin-bottom: 20px;
+        @media (max-width: $breakpoint480) {
+            flex-wrap: wrap;
+        }
+        &__input {
+            display: flex;
+            width: 100%;
+            border: 1px solid #D3DAD7;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            padding: 16px 20px;
+            color: $primaryDark;
+            outline: none;
+            @media (max-width: $breakpoint480) {
+                font-size: 14px;
+                line-height: 1;
+                padding: 14px 16px;
+            }
+            &:focus{
+                outline: 1px solid $primary;
+            }
+            &::placeholder {
+                color: #94A69D;
+            }
+        }
+        &__btn {
+            padding: 15px 30px;
+        }
+    }
+}
