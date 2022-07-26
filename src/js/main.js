@@ -46,3 +46,34 @@ function submenu(){
   });
 }
 submenu();
+
+//Slider
+
+const swiper = new Swiper('.swiper__team', {
+  
+  slidesPerView: 3,
+  spaceBetween: 60,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.prev__btn',
+    prevEl: '.next__btn',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+  // when window width is >= 320px
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 30
+  },
+  // when window width is >= 480px
+  480: {
+    slidesPerView: 2,
+    spaceBetween: 30
+  },
+  768: {
+    slidesPerView: 3,
+  },
+}
+});
