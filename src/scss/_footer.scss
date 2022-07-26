@@ -1,4 +1,116 @@
-// Footer
 footer {
-    display: block;
+    background: $primary;
+    .footer {
+        display: flex;
+        gap: 85px;
+        padding: 70px 0 35px 0;
+        border-bottom: 1px solid #D3DAD7;
+        @media (max-width: $breakpoint768) {
+            gap: 40px;
+            padding: 40px 0;
+        }
+
+        @media (max-width: $breakpoint480) {
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (max-width: $breakpoint480) {
+                gap: 10px;
+            }
+
+            .footer__title {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $white;
+                @media (max-width: $breakpoint768) {
+                    font-size: 14px;
+                }
+            }
+
+            .footer__list .footer__list-item .footer__link {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: #B0BDB7;
+                transition: .3s;
+                @media (max-width: $breakpoint768) {
+                    font-size: 12px;
+                }
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            .footer__list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                @media (max-width: $breakpoint480) {
+                    gap: 5px;
+                }
+            }
+        }
+    }
+
+    .footer__bottom {
+        padding: 35px 0 70px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $breakpoint768) {
+            padding: 30px 0;
+        }
+
+        @media (max-width: $breakpoint480) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .copyright {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #D3DAD7;
+            @media (max-width: $breakpoint768) {
+                font-size: 14px;
+            }
+            @media (max-width: $breakpoint480) {
+                order: 2;
+            }
+        }
+
+        .social__list {
+            display: flex;
+            gap: 34px;
+            align-items: center;
+            &-item {
+                
+                a {
+                    img {
+                        fill: #D3DAD7;
+                    color: #D3DAD7;
+                    stroke: #D3DAD7;
+                    }
+
+                    &:hover {
+                        path {
+                            fill: $white;
+                            transition: .3s fill;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

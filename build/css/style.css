@@ -935,6 +935,109 @@ body.locked {
   padding: 15px 30px;
 }
 
+footer {
+  background: #03283C;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+  padding: 70px 0 35px 0;
+  border-bottom: 1px solid #D3DAD7;
+}
+
+footer .footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer__item .footer__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+footer .footer__item .footer__list .footer__list-item .footer__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #B0BDB7;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .footer__item .footer__list .footer__list-item .footer__link:hover {
+  color: #fff;
+}
+
+footer .footer__item .footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer__bottom {
+  padding: 35px 0 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__bottom .copyright {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D3DAD7;
+}
+
+footer .footer__bottom .social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__bottom .social__list-item a img {
+  fill: #D3DAD7;
+  color: #D3DAD7;
+  stroke: #D3DAD7;
+}
+
+footer .footer__bottom .social__list-item a:hover path {
+  fill: #fff;
+  -webkit-transition: 0.3s fill;
+  -o-transition: 0.3s fill;
+  transition: 0.3s fill;
+}
+
 /**
  * Swiper 7.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2249,6 +2352,27 @@ button.swiper-pagination-bullet {
     font-size: 14px;
     margin-bottom: 15px;
   }
+
+  footer .footer {
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  footer .footer__item .footer__title {
+    font-size: 14px;
+  }
+
+  footer .footer__item .footer__list .footer__list-item .footer__link {
+    font-size: 12px;
+  }
+
+  footer .footer__bottom {
+    padding: 30px 0;
+  }
+
+  footer .footer__bottom .copyright {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 578px) {
@@ -2337,6 +2461,34 @@ button.swiper-pagination-bullet {
     font-size: 14px;
     line-height: 1;
     padding: 14px 16px;
+  }
+
+  footer .footer {
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  footer .footer__item {
+    gap: 10px;
+  }
+
+  footer .footer__item .footer__list {
+    gap: 5px;
+  }
+
+  footer .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .footer__bottom .copyright {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
