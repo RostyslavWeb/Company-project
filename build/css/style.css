@@ -219,9 +219,11 @@ body.locked {
   position: absolute;
   left: 0;
   right: 0;
-  top: 25px;
+  top: 32px;
   display: none;
-  background: #03283C;
+  -webkit-box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
 }
 
 .menu__item.with__submenu .submenu.active {
@@ -231,9 +233,9 @@ body.locked {
 }
 
 .menu__item.with__submenu .submenu__link {
-  color: #fff;
+  color: #333;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   display: -webkit-box;
@@ -247,6 +249,7 @@ body.locked {
 
 .menu__item.with__submenu .submenu__link:hover {
   background-color: #FF6200;
+  border-radius: 2px;
 }
 
 .menu__item-link {
@@ -320,7 +323,7 @@ body.locked {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 250px;
   z-index: 3;
   gap: 20px;
 }
@@ -2005,6 +2008,7 @@ button.swiper-pagination-bullet {
   .menu__item.with__submenu .submenu__link {
     font-size: 16px;
     padding: 10px;
+    color: #fff;
   }
 
   .menu__item-link .submenu__arrow .submenu__path {
@@ -2013,6 +2017,9 @@ button.swiper-pagination-bullet {
 
   .nav__btns {
     display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .nav__btn {
@@ -2024,6 +2031,9 @@ button.swiper-pagination-bullet {
             flex: 0 1 50%;
     background: #FF6200;
     color: #fff;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 
   .header__wrapper .hero__item {
@@ -2409,6 +2419,7 @@ button.swiper-pagination-bullet {
 
   .nav__btns.active {
     gap: 10px;
+    bottom: 200px;
   }
 
   .nav__btns {

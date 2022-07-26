@@ -55,8 +55,10 @@ nav {
                 position: absolute;
                 left: 0;
                 right: 0;
-                top: 25px;
+                top: 32px;
                 display: none;
+                box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.07);
+                border-radius: 4px;
                 &.active {
                     display: block;
                     animation: fade .3s linear;
@@ -65,7 +67,6 @@ nav {
                         padding-top: 15px;
                     }
                 }
-                background: $primary;
                 @media(max-width: $breakpoint992){
                     background: $primaryDark;
                 }
@@ -73,9 +74,9 @@ nav {
                 
                 }
                 &__link {
-                    color: $white;
+                    color: #333;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 300;
                     font-size: 16px;
                     line-height: 20px;
                     display: flex;
@@ -84,9 +85,12 @@ nav {
                     @media(max-width: $breakpoint992){
                         font-size: 16px;
                         padding: 10px;
+                        color: $white;
                     }
+                    
                     &:hover {
                         background-color: $secondary;
+                        border-radius: 2px;
                     }
                 }
             }
@@ -149,22 +153,25 @@ nav {
     &__btns{
         margin-left: auto;
         display: flex;
+        
 
         &.active{
             display: flex;
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 250px;
             z-index: 3;
             gap: 20px;
             @media(max-width: $breakpoint480){
                 gap: 10px;
+                bottom: 200px;
             }
         }
 
         @media(max-width: $breakpoint992){
             display: none;
+            justify-content: center;
         }
         @media(max-width: $breakpoint480){
             flex-wrap: wrap;
@@ -177,6 +184,7 @@ nav {
             flex: 0 1 50%;
             background: $secondary;
             color: $white;
+            max-width: fit-content;
         }
         @media(max-width: $breakpoint480){
             flex: 0 1 100%;
