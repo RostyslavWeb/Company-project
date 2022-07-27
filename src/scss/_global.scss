@@ -91,6 +91,7 @@ body {
         text-transform: capitalize;
         color: $primary;
         margin-bottom: 15px;
+        letter-spacing: -1px;
         
         @media (max-width: $breakpoint1450) {
             font-size: 42px;
@@ -129,7 +130,7 @@ body {
         }
 
         &.subtitle__white{
-            color: $white;
+            color: #D3DAD7;
         }
     }
 

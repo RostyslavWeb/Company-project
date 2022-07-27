@@ -5,11 +5,8 @@
             padding: 50px 0;
         }
 
-        .action__subtitle {
-            margin-bottom: 50px;
-            @media (max-width: $breakpoint1450) {
-                margin-bottom: 35px;
-            }
+        .action__title {
+            margin-bottom: 35px;
         }
 
         .action__btn {

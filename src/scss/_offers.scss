@@ -32,6 +32,11 @@
                 
                 .offer__img {
                     margin-bottom: 15px;
+                    
+                    img {
+                        width: 100%;
+                        height: 165px;
+                    }
                 }
             }
             &__item:nth-child(odd){
