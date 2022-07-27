@@ -10,4 +10,4 @@
 + Swiper Slider
 
 ## Preview:
-![Preview](link)
+![Preview](https://github.com/RostyslavWeb/Company-project/blob/master/Company-index.jpg)
